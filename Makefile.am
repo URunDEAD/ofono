@@ -691,6 +691,7 @@ endif
 AM_CFLAGS = @DBUS_CFLAGS@ @GLIB_CFLAGS@ $(ell_cflags) $(builtin_cflags) \
 					-DOFONO_PLUGIN_BUILTIN \
 					-DPLUGINDIR=\""$(build_plugindir)"\" \
+					-DPKGDATADIR=\""$(pkgdatadir)"\" \
 					-DUNITDIR=\""$(top_builddir)/unit/"\"
 
 AM_CPPFLAGS = -I$(builddir)/include -I$(builddir)/src -I$(srcdir)/src \
