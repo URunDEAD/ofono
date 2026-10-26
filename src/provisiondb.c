@@ -161,7 +161,7 @@ struct provision_db *provision_db_new_default(void)
 {
 	struct provision_db *db = NULL;
 	size_t i;
-	const char * const paths[] = { "/usr/share/ofono/provision.db" };
+	const char * const paths[] = { PKGDATADIR "/provision.db" };
 
 	for (i = 0; !db && i < L_ARRAY_SIZE(paths); i++)
 		db = provision_db_new(paths[i]);
